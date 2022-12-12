@@ -1,0 +1,5 @@
+[Unit]
+Description=Run the swaybg-hourly service
+
+[Service]
+ExecStart=/usr/local/bin/swaybg-hourly.sh

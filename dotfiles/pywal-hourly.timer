@@ -1,0 +1,13 @@
+#place into /etc/systemd/system
+[Unit]
+Description=pywal-hourly service timer
+
+[Timer]
+OnBootSec=0min
+OnCalendar=*-*-* *:00:00
+Unit=pywal-hourly.service
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target
+

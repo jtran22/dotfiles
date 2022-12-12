@@ -1,0 +1,6 @@
+#place service in /etc/systemmd/system/
+[Unit]
+Description=Run the pywal-hourly service
+
+[Service]
+ExecStart=/usr/local/bin/pywal-hourly.sh
